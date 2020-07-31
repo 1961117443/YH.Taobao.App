@@ -243,6 +243,37 @@ const productRouter = [
         meta: { title: '材料库存', icon: 'list' }
       }
     ]
+  },
+  {
+    path: '/expenses',
+    component: Layout,
+    redirect: '/expenses/list',
+    name: 'Expenses',
+    meta: {
+      title: '费用支出',
+      icon: 'el-icon-s-help'
+    },
+    children: [
+      {
+        path: 'create',
+        component: () => import('@/views/expenses/create'),
+        name: 'CreateExpenses',
+        meta: { title: '新增支出单', icon: 'edit' }
+      },
+      {
+        path: 'edit/:id(\\d+)',
+        component: () => import('@/views/expenses/edit'),
+        name: 'EditExpenses',
+        meta: { title: '修改支出单', noCache: true, activeMenu: '/expenses/list' },
+        hidden: true
+      },
+      {
+        path: 'list',
+        component: () => import('@/views/expenses/list'),
+        name: 'ExpensesList',
+        meta: { title: '费用支出列表', icon: 'list' }
+      }
+    ]
   }
 ]
 

@@ -33,6 +33,10 @@
       <router-link to="/sales-out/list" class="link-type document-btn"><span>销售出库</span></router-link>
       <router-link to="/sales-out/create" class="link-type document-btn"><span>新增销售出库</span></router-link>
     </el-row>
+    <el-row>
+      <router-link to="/expenses/list" class="link-type document-btn"><span>费用支出</span></router-link>
+      <router-link to="/expenses/create" class="link-type document-btn"><span>新增支出单</span></router-link>
+    </el-row>
 
     <!-- <router-link :to="'/example/edit/'+row.id" class="link-type"><span>货品档案</span></router-link> -->
     <!-- <a class="document-btn" target="_blank" href="https://panjiachen.gitee.io/vue-element-admin-site/zh/">国内文档</a>-->
