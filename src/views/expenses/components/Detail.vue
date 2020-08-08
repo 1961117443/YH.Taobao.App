@@ -47,7 +47,7 @@
 </template>
 
 <script>
-import MDinput from '@/components/MDinput'
+// import MDinput from '@/components/MDinput'
 import Sticky from '@/components/Sticky' // 粘性header组件
 import { fetchExpenses, createExpenses, updateExpenses } from '@/api/expenses'
 
@@ -61,7 +61,7 @@ const defaultForm = {
 
 export default {
   name: 'ExpensesDetail',
-  components: { MDinput, Sticky },
+  components: { Sticky },
   props: {
     isEdit: {
       type: Boolean,

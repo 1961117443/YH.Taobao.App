@@ -12,6 +12,7 @@ import chartsRouter from './modules/charts'
 import tableRouter from './modules/table'
 import nestedRouter from './modules/nested'
 import productRouter from './modules/product'
+import reportRouter from './modules/report'
 
 /**
  * Note: sub-menu only appear when route children.length >= 1
@@ -191,6 +192,7 @@ export const asyncRoutes = [
   nestedRouter,
   tableRouter,
   ...productRouter,
+  ...reportRouter,
   {
     path: '/example',
     component: Layout,

@@ -17,6 +17,7 @@
     </el-row> -->
     <el-row>
       <router-link to="/product-stock/list" class="link-type document-btn"><span>材料库存</span></router-link>
+      <router-link to="/reports/sales-profit" class="link-type document-btn"><span>按月销售利润</span></router-link>
       <!-- <router-link to="/product-stock/list" class="link-type document-btn"><span>存货核算</span></router-link> -->
     </el-row>
     <!-- <el-row>
@@ -46,11 +47,11 @@
 </template>
 
 <script>
-import DropdownMenu from '@/components/Share/DropdownMenu'
+// import DropdownMenu from '@/components/Share/DropdownMenu'
 
 export default {
   name: 'Documentation',
-  components: { DropdownMenu },
+  components: { },
   data() {
     return {
       articleList: [
